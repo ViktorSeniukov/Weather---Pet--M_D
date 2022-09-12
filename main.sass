@@ -8,13 +8,23 @@
   padding: 0
   margin: 0
 
-body
-  background-image: url(bgi/Background-CLOUD.svg)
-  background-size: 100%
-  background-repeat: no-repeat
 
-.container
+.block
+  display: none
+
+
+body
+  background-size: contain
+  background-repeat: no-repeat
+  background-color: #A2E8FF
   margin: 0 15px
+
+.clear
+  background-image: url(bgi/Background-SUN.svg)
+
+
+.clouds
+  background-image: url(bgi/Background-CLOUD.svg)
 
 header
   display: flex
@@ -253,7 +263,6 @@ input[type="button" i]
   align-self: end
   font-size: 25px
   line-height: 29px
-
 
 footer
   display: flex

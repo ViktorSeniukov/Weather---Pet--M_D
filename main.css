@@ -7,14 +7,23 @@
   margin: 0;
 }
 
-body {
-  background-image: url(bgi/Background-CLOUD.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+.block {
+  display: none;
 }
 
-.container {
+body {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #A2E8FF;
   margin: 0 15px;
+}
+
+.clear {
+  background-image: url(bgi/Background-SUN.svg);
+}
+
+.clouds {
+  background-image: url(bgi/Background-CLOUD.svg);
 }
 
 header {

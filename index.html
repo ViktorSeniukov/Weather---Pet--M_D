@@ -3,18 +3,20 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Weather</title>
     <!-- Links -->
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="adaptive.css">
   </head>
-  <body class="body container">
+  <body class="" id="body">
     <header>
       <div class="search">
         <div class="search-box">
-          <input type="text" name="search" id="" placeholder="Alanya" class="search-box-input">
+          <input type="text" name="search" id="search" placeholder="Alanya" class="search-box-input">
         </div>
-        <input type="button" value="" class="search-btn">
+        <input type="button" name="search" value="" class="search-btn" id="search_btn">
       </div>
       <div class="data">
         <p id="up_Data">XX.XX.XXXX</p>
@@ -24,11 +26,11 @@
       <section class="main-cel">
         <div class="main-cel-box">
           <div class="main-cel-h1">
-            <h1>30&deg;C</h1>
+            <h1 id="main_cel">XX&deg;C</h1>
           </div>
           <div class="main-cel-other-info">
             <div class="main-cel-other-info-block">
-              <h2>10</h2>
+              <h2 id="wind_speed">XX</h2>
               <h3>m/c</h3>
             </div>
             <div class="main-cel-other-info-block">
@@ -36,13 +38,14 @@
               <h3>km</h3>
             </div>
             <div class="main-cel-other-info-block">
-              <h2>68</h2>
+              <h2 id="humidity">XX</h2>
               <h3>%</h3>
             </div>
           </div>
         </div>
       </section>
-      <section class="hours">
+      <div class="block">
+      <section class="block hours">
         <div class="hour-box">       <!-- 1 -->
           <h4>15</h4>
           <div class="hour-box-line"></div>
@@ -124,30 +127,31 @@
           </div>
         </div>
       </section>
+      </div>
       <section class="other-info">
         <div class="other-card">
           <p class="other-card-title">feels<br>like</p>
-          <p class="other-card-info">36&deg;C</p>
+          <p class="other-card-info"><span id="feels">XX</span>&deg;C</p>
         </div>
         <div class="other-card">
           <p class="other-card-title">humidity</p>
-          <p class="other-card-info">64%</p>
+          <p class="other-card-info"><span id="humidity_main">XX</span>%</p>
         </div>
         <div class="other-card">
-          <p class="other-card-title">sunset</p>
-          <p class="other-card-info">19:12</p>
+          <p class="other-card-title">sunrise</p>
+          <p class="other-card-info" id="sunrise">XX:XX</p>
         </div>
         <div class="other-card">
           <p class="other-card-title">visibility</p>
           <p class="other-card-info">16 km</p>
         </div>
         <div class="other-card">
-          <p class="other-card-title">good day to you</p>
+          <p class="other-card-title" id="luck">good day to you</p>
           <p class="other-card-info"></p>
         </div>
         <div class="other-card">
-          <p class="other-card-title">sunrise</p>
-          <p class="other-card-info">6:27</p>
+          <p class="other-card-title">sunset</p>
+          <p class="other-card-info" id="sunset">XX:XX</p>
         </div>
       </section>
     </main>
